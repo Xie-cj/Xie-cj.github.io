@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xcj.im</id>
     <title>小菜鸡&apos;s blog</title>
-    <updated>2020-03-13T14:19:24.794Z</updated>
+    <updated>2020-03-13T16:34:25.754Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xcj.im"/>
     <link rel="self" href="https://blog.xcj.im/atom.xml"/>
@@ -15,15 +15,16 @@
         <id>https://blog.xcj.im/post/hello-world/</id>
         <link href="https://blog.xcj.im/post/hello-world/">
         </link>
-        <updated>2020-03-13T12:56:10.000Z</updated>
-        <summary type="html"><![CDATA[<h1 id="你好世界">你好，世界！</h1>
-]]></summary>
+        <updated>2020-03-14T12:56:10.000Z</updated>
         <content type="html"><![CDATA[<h1 id="你好世界">你好，世界！</h1>
-<!-- more -->
-<p>本博客由<a href="https://gridea.dev" target="_blank">Gridea</a>驱动，部署于<a href="https://coding.net/" target="_blank">CODING</a></p>
-<!-- moer -->
-<pre><code>let a = 1;
-</code></pre>
+<p>我的第一篇博文</p>
+<hr>
+<h2 id="在这里先定几个小目标">在这里先定几个小目标</h2>
+<ol>
+<li>每周保质保量更新博客</li>
+<li>保持持续学习状态</li>
+<li><s>三年后月薪过万</s></li>
+</ol>
 ]]></content>
     </entry>
 </feed>
