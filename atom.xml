@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://blog.xcj.im</id>
     <title>小菜鸡&apos;s blog</title>
-    <updated>2020-03-13T12:02:31.074Z</updated>
+    <updated>2020-03-13T12:07:36.200Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://blog.xcj.im"/>
     <link rel="self" href="http://blog.xcj.im/atom.xml"/>
@@ -10,4 +10,13 @@
     <logo>http://blog.xcj.im/images/avatar.png</logo>
     <icon>http://blog.xcj.im/favicon.ico</icon>
     <rights>All rights reserved 2020, 小菜鸡&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[test2]]></title>
+        <id>http://blog.xcj.im/post/test2/</id>
+        <link href="http://blog.xcj.im/post/test2/">
+        </link>
+        <updated>2020-03-13T12:07:10.000Z</updated>
+        <content type="html"><![CDATA[<p>test2</p>
+]]></content>
+    </entry>
 </feed>
