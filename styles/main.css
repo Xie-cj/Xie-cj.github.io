@@ -771,4 +771,18 @@ a {
     background-image: url('https://pic.downk.cc/item/5e6bb953e83c3a1e3ac06c58.jpg');
 }
 
+.post-abstract > *{
+    margin-bottom: 10px;
+}.post-abstract > *:nth-last-child(2){
+    margin-bottom: 10px;
+}
+
+.post-detail .post-content pre code {
+    font-size: 16px;
+    padding: 1rem 1.25rem;
+}
+
+.post-detail .post-content pre code:after{
+    content: '';
+}
     

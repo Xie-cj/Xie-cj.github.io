@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | 小菜鸡&#39;s blog</title>
+<title>Vue组件间通信 | 小菜鸡&#39;s blog</title>
 
 <!-- 百度站长验证 -->
 <meta name="baidu-site-verification" content="P3HYFUVW3p" />
@@ -24,15 +24,11 @@
 
 
 
-    <meta name="description" content="
-欢迎来到我的博客呀，很高兴遇见你！🤝
+    <meta name="description" content="组件（Component）是 Vue.js 最强大的功能之一。
+组件化是Vue的核心思想之一，这种化整为零的方式主要为了代码重用以及便于后期维护。
 
-🏠 关于本站
-本站是一个记录型博客，记录我成长的点点滴滴。偶尔会分享一些实用技巧和工具
-至于为什么叫小菜鸡，因为我名字的缩写是xcj...
-👨‍💻 博主是谁
-一只前端小菜鸡。但是我相信终有一..." />
-    <meta name="keywords" content="" />
+组件系统让我们可以用独立可复用的小组件来构建大型应用，几乎任意类型的应用的界面都可以抽象为..." />
+    <meta name="keywords" content="组件,Vue" />
   </head>
   <body>
     <div id="app" class="main">
@@ -108,35 +104,83 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2020-03-13</div>
+            <h2 class="post-title">Vue组件间通信</h2>
+            <div class="post-date">2020-03-18</div>
             
             <div class="post-content" v-pre>
-              <blockquote>
-<p>欢迎来到我的博客呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>本站是一个记录型博客，记录我成长的点点滴滴。偶尔会分享一些实用技巧和工具<br>
-至于为什么叫小菜鸡，因为我名字的缩写是xcj...</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>一只前端小菜鸡。但是我相信终有一天，走地鸡也能变成翱翔于天际的雄鹰！</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<ul>
-<li><s>唱歌</s></li>
-<li><s>跳舞</s></li>
-<li><s>打篮球</s></li>
-<li>玩游戏</li>
-</ul>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<ul>
-<li>E-mail：xie-c-j@qq.com</li>
-<li>Telegram：<a href="https://t.me/Xiecj" target="_blank">@Xiecj</a></li>
-</ul>
+              <p>组件（Component）是 Vue.js 最强大的功能之一。<br>
+组件化是Vue的核心思想之一，这种化整为零的方式主要为了代码重用以及便于后期维护。</p>
 <!-- more -->
-<p>本博客由<a href="https://gridea.dev" target="_blank">Gridea</a>驱动，部署于<a href="https://coding.net/" target="_blank">CODING</a></p>
+<p>组件系统让我们可以用独立可复用的小组件来构建大型应用，几乎任意类型的应用的界面都可以抽象为一个组件树：<br>
+<img src="https://www.runoob.com/wp-content/uploads/2017/01/components.png" alt="Vue组件树" loading="lazy"></p>
+<h1 id="组件间通信">组件间通信</h1>
+<p>因为组件的作用域是独立的，组件内的数据无法被其他组件直接访问到。所以需要通过特定的方式通信，组件间才能实现信息交互。</p>
+<h2 id="父组件-子组件">父组件 =&gt; 子组件</h2>
+<ul>
+<li>props<pre><code class="language-html">&lt;!-- 父组件传值 --&gt;
+&lt;message msg=&quot;Hello Vue.js&quot;&gt;&lt;/message&gt;
+</code></pre>
+<pre><code class="language-js">// 子组件获取数据
+props: { msg: String }
+</code></pre>
+</li>
+<li>$refs<pre><code class="language-html">&lt;!-- 父组件创建引用节点 --&gt;
+&lt;message ref=&quot;msg&quot;&gt;&lt;/message&gt;
+</code></pre>
+<pre><code class="language-js">// 传递数据
+this.$refs.msg.xxx = xxx
+</code></pre>
+</li>
+<li>$children<pre><code class="language-js">// 给第[n]个子组件传递数据
+this.$children[0].xxx = xxx
+</code></pre>
+<blockquote>
+<p>需要注意 $children 并不保证顺序，也不是响应式的。如果你发现自己正在尝试使用 $children 来进行数据绑定，考虑使用一个数组配合 v-for 来生成子组件，并且使用 Array 作为真正的来源。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="子组件-父组件">子组件 =&gt; 父组件</h2>
+<p>$emit</p>
+<pre><code class="language-js">// 子组件发送数据
+this.$emit('newName', '小菜鸡')
+</code></pre>
+<pre><code class="language-html">&lt;!-- 父组件响应自定义事件并获取数据 --&gt;
+&lt;name @newName=&quot;setName($event)&quot;&gt;&lt;/name&gt;
+</code></pre>
+<h2 id="兄弟组件之间">兄弟组件之间</h2>
+<p>给共同的祖辈($parent或$root)添加监听自定义事件</p>
+<pre><code class="language-js">// 让父组件监听fun事件
+this.$parent.$on('fun', () =&gt; {
+    console.log('响应fun事件')
+})
+
+// 让父组件响应fun事件
+this.$parent.$emit('fun')
+</code></pre>
 
             </div>
             
+              <div class="tag-container">
+                
+                  <a href="https://blog.xcj.im/tag/HwoIAAl7M/" class="tag">
+                    组件
+                  </a>
+                
+                  <a href="https://blog.xcj.im/tag/U7JAVWl1d/" class="tag">
+                    Vue
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://blog.xcj.im/post/hello-world/">
+                  <h3 class="post-title">
+                    Hello World!
+                  </h3>
+                </a>
+              </div>
             
 
             

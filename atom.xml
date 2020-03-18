@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xcj.im</id>
     <title>小菜鸡&apos;s blog</title>
-    <updated>2020-03-16T16:23:32.812Z</updated>
+    <updated>2020-03-18T13:13:53.878Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xcj.im"/>
     <link rel="self" href="https://blog.xcj.im/atom.xml"/>
@@ -11,13 +11,77 @@
     <icon>https://blog.xcj.im/favicon.ico</icon>
     <rights>All rights reserved 2020, 小菜鸡&apos;s blog</rights>
     <entry>
+        <title type="html"><![CDATA[Vue组件间通信]]></title>
+        <id>https://blog.xcj.im/post/vue-zu-jian/</id>
+        <link href="https://blog.xcj.im/post/vue-zu-jian/">
+        </link>
+        <updated>2020-03-17T17:29:20.000Z</updated>
+        <summary type="html"><![CDATA[<p>组件（Component）是 Vue.js 最强大的功能之一。<br>
+组件化是Vue的核心思想之一，这种化整为零的方式主要为了代码重用以及便于后期维护。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>组件（Component）是 Vue.js 最强大的功能之一。<br>
+组件化是Vue的核心思想之一，这种化整为零的方式主要为了代码重用以及便于后期维护。</p>
+<!-- more -->
+<p>组件系统让我们可以用独立可复用的小组件来构建大型应用，几乎任意类型的应用的界面都可以抽象为一个组件树：<br>
+<img src="https://www.runoob.com/wp-content/uploads/2017/01/components.png" alt="Vue组件树" loading="lazy"></p>
+<h1 id="组件间通信">组件间通信</h1>
+<p>因为组件的作用域是独立的，组件内的数据无法被其他组件直接访问到。所以需要通过特定的方式通信，组件间才能实现信息交互。</p>
+<h2 id="父组件-子组件">父组件 =&gt; 子组件</h2>
+<ul>
+<li>props<pre><code class="language-html">&lt;!-- 父组件传值 --&gt;
+&lt;message msg=&quot;Hello Vue.js&quot;&gt;&lt;/message&gt;
+</code></pre>
+<pre><code class="language-js">// 子组件获取数据
+props: { msg: String }
+</code></pre>
+</li>
+<li>$refs<pre><code class="language-html">&lt;!-- 父组件创建引用节点 --&gt;
+&lt;message ref=&quot;msg&quot;&gt;&lt;/message&gt;
+</code></pre>
+<pre><code class="language-js">// 传递数据
+this.$refs.msg.xxx = xxx
+</code></pre>
+</li>
+<li>$children<pre><code class="language-js">// 给第[n]个子组件传递数据
+this.$children[0].xxx = xxx
+</code></pre>
+<blockquote>
+<p>需要注意 $children 并不保证顺序，也不是响应式的。如果你发现自己正在尝试使用 $children 来进行数据绑定，考虑使用一个数组配合 v-for 来生成子组件，并且使用 Array 作为真正的来源。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="子组件-父组件">子组件 =&gt; 父组件</h2>
+<p>$emit</p>
+<pre><code class="language-js">// 子组件发送数据
+this.$emit('newName', '小菜鸡')
+</code></pre>
+<pre><code class="language-html">&lt;!-- 父组件响应自定义事件并获取数据 --&gt;
+&lt;name @newName=&quot;setName($event)&quot;&gt;&lt;/name&gt;
+</code></pre>
+<h2 id="兄弟组件之间">兄弟组件之间</h2>
+<p>给共同的祖辈($parent或$root)添加监听自定义事件</p>
+<pre><code class="language-js">// 让父组件监听fun事件
+this.$parent.$on('fun', () =&gt; {
+    console.log('响应fun事件')
+})
+
+// 让父组件响应fun事件
+this.$parent.$emit('fun')
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hello World!]]></title>
         <id>https://blog.xcj.im/post/hello-world/</id>
         <link href="https://blog.xcj.im/post/hello-world/">
         </link>
         <updated>2020-03-14T12:56:10.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="你好世界">你好，世界！</h1>
+<p>我的第一篇博文</p>
+]]></summary>
         <content type="html"><![CDATA[<h1 id="你好世界">你好，世界！</h1>
 <p>我的第一篇博文</p>
+<!-- more -->
 <hr>
 <h2 id="在这里先定几个小目标">在这里先定几个小目标</h2>
 <ol>
