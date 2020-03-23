@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | 小菜鸡&#39;s blog</title>
+<title>给代码块添加行号和复制按钮 | 小菜鸡&#39;s blog</title>
 
 <!-- 百度站长验证 -->
 <meta name="baidu-site-verification" content="P3HYFUVW3p" />
@@ -24,7 +24,8 @@
 
 
 
-    <meta name="description" content="小菜鸡就是我，我就是 · 小菜鸡~">
+    <meta name="description" content="使用highlight.js可以非常方便让code标签里面的代码高亮。你只需要引入highlight.js和highlight的样式文件，并在页面加载完成时执行hljs.initHighlighting()即可。但是它并不支持显示行号，所以..." />
+    <meta name="keywords" content="显示行号,代码复制" />
   </head>
   <body>
     <div id="app" class="main">
@@ -99,18 +100,66 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">给代码块添加行号和复制按钮</h2>
+            <div class="post-date">2020-03-22</div>
             
-              <a class="tag" href="https://blog.xcj.im/tag/5adKizKSn/">显示行号</a>
+            <div class="post-content" v-pre>
+              <p>使用highlight.js可以非常方便让code标签里面的代码高亮。你只需要引入highlight.js和highlight的样式文件，并在页面加载完成时执行<code>hljs.initHighlighting()</code>即可。但是它并不支持显示行号，所以自己撸一个简单的行号显示并利用clipboard实现代码复制功能。</p>
+<!-- more -->
+<p>效果展示，以10行为分界线，代码小于10行时不显示行号</p>
+<pre><code>██╗  ██╗ ██████╗     ██╗
+╚██╗██╔╝██╔════╝     ██║
+ ╚███╔╝ ██║          ██║
+ ██╔██╗ ██║     ██   ██║
+██╔╝ ██╗╚██████╗╚█████╔╝
+╚═╝  ╚═╝ ╚═════╝ ╚════╝ 
+</code></pre>
+<p>代码大于等于10行，显示行号</p>
+<pre><code>▒██   ██▒ ▄████▄   ▄▄▄██▀▀▀
+▒▒ █ █ ▒░▒██▀ ▀█     ▒██   
+░░  █   ░▒▓█    ▄    ░██   
+ ░ █ █ ▒ ▒▓▓▄ ▄██▒▓██▄██▓  
+▒██▒ ▒██▒▒ ▓███▀ ░ ▓███▒   
+▒▒ ░ ░▓ ░░ ░▒ ▒  ░ ▒▓▒▒░   
+░░   ░▒ ░  ░  ▒    ▒ ░▒░   
+ ░    ░  ░         ░ ░ ░   
+ ░    ░  ░ ░       ░   ░   
+         ░          
+</code></pre>
+<p>PS:<a href="http://patorjk.com/software/taag/#p=display&amp;f=Graffiti&amp;t=Type%20Something%20?_blank">字符画生成工具</a></p>
+<h2 id="代码显示行号">代码显示行号</h2>
+<p>这个行号显示其实就是增大<code>code</code>的左内边距+绝对定位的<code>ol</code>来实现的<img src="https://pic.downk.cc/item/5e7856345c560911297b863f.jpg" alt="img" loading="lazy"></p>
+
+            </div>
             
-              <a class="tag" href="https://blog.xcj.im/tag/dQkxxFduu/">代码复制</a>
+              <div class="tag-container">
+                
+                  <a href="https://blog.xcj.im/tag/5adKizKSn/" class="tag">
+                    显示行号
+                  </a>
+                
+                  <a href="https://blog.xcj.im/tag/dQkxxFduu/" class="tag">
+                    代码复制
+                  </a>
+                
+              </div>
             
-              <a class="tag" href="https://blog.xcj.im/tag/HwoIAAl7M/">组件</a>
             
-              <a class="tag" href="https://blog.xcj.im/tag/U7JAVWl1d/">Vue</a>
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://blog.xcj.im/post/vue-zu-jian/">
+                  <h3 class="post-title">
+                    Vue组件间通信
+                  </h3>
+                </a>
+              </div>
             
+
+            
+
           </div>
+
         </div>
       </div>
     </div>

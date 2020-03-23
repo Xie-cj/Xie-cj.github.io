@@ -12,7 +12,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<!-- <link rel="shortcut icon" href="https://blog.xcj.im/favicon.ico?v=1584594025375"> -->
+<!-- <link rel="shortcut icon" href="https://blog.xcj.im/favicon.ico?v=1584953243244"> -->
 <link rel="shortcut icon" href="https://blog.xcj.im/favicon.ico">
 <link rel="stylesheet" href="https://blog.xcj.im/styles/main.css">
 <link href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/vs2015.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://blog.xcj.im">
-        <!-- <img src="https://blog.xcj.im/images/avatar.png?v=1584594025375" class="site-logo"> -->
+        <!-- <img src="https://blog.xcj.im/images/avatar.png?v=1584953243244" class="site-logo"> -->
         <img src="https://blog.xcj.im/images/avatar.png" class="site-logo">
         <h1 class="site-title">小菜鸡&#39;s blog</h1>
       </a>
@@ -91,7 +91,7 @@
       小菜鸡就是我，我就是 · 小菜鸡~
     </div>
     <div class="site-footer">
-      友情链接：<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a href="https://www.yunlab.me/" target="-blank">云喇叭</a><a class="rss" href="https://blog.xcj.im/atom.xml" title="RSS" target="_blank"><svg t="1584027465553" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1537" width="20" height="20"><path d="M544.059897 959.266898h-64.949141c-228.633593 0-415.697442-187.063849-415.697442-415.697442v-64.949141c0-228.633593 187.063849-415.697442 415.697442-415.697442h64.949141c228.633593 0 415.697442 187.063849 415.697442 415.697442v64.949141C959.756315 772.203049 772.692466 959.266898 544.059897 959.266898z" fill="#FD9B00" p-id="1538"></path><path d="M638.254276 718.937463c0-186.152591-151.296463-337.64564-337.178748-337.64564v-80.094453c230.17966 0 417.439071 187.459069 417.43907 417.739069H638.254276zM576.586686 718.937463h-80.368854c0-52.377878-20.342554-101.550994-57.208569-138.422129-36.882397-36.960212-85.890668-57.311981-138.048411-57.311981v-80.070904C452.934103 443.132449 576.586686 566.766602 576.586686 718.937463zM356.501512 607.516214c30.775945 0 55.629737 25.013518 55.629737 55.528373 0 30.607004-24.853792 55.351241-55.629737 55.351241-30.667413 0-55.583663-24.743213-55.583663-55.351241C300.917849 632.529733 325.834099 607.516214 356.501512 607.516214z" fill="#FFFFFF" p-id="1539"></path></svg></a>
+      友情链接：<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><a class="rss" href="https://blog.xcj.im/atom.xml" title="RSS" target="_blank"><svg t="1584027465553" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1537" width="20" height="20"><path d="M544.059897 959.266898h-64.949141c-228.633593 0-415.697442-187.063849-415.697442-415.697442v-64.949141c0-228.633593 187.063849-415.697442 415.697442-415.697442h64.949141c228.633593 0 415.697442 187.063849 415.697442 415.697442v64.949141C959.756315 772.203049 772.692466 959.266898 544.059897 959.266898z" fill="#FD9B00" p-id="1538"></path><path d="M638.254276 718.937463c0-186.152591-151.296463-337.64564-337.178748-337.64564v-80.094453c230.17966 0 417.439071 187.459069 417.43907 417.739069H638.254276zM576.586686 718.937463h-80.368854c0-52.377878-20.342554-101.550994-57.208569-138.422129-36.882397-36.960212-85.890668-57.311981-138.048411-57.311981v-80.070904C452.934103 443.132449 576.586686 566.766602 576.586686 718.937463zM356.501512 607.516214c30.775945 0 55.629737 25.013518 55.629737 55.528373 0 30.607004-24.853792 55.351241-55.629737 55.351241-30.667413 0-55.583663-24.743213-55.583663-55.351241C300.917849 632.529733 325.834099 607.516214 356.501512 607.516214z" fill="#FFFFFF" p-id="1539"></path></svg></a>
     </div>
   </div>
 </div>
@@ -105,6 +105,16 @@
           <div class="archives-container">
             
               <h2 class="year" data-aos="fade-in" data-aos-delay="500">2020</h2>
+              
+                
+                  <article class="post">
+                    <a href="https://blog.xcj.im/post/line-number/">
+                      <h2 class="post-title">
+                        给代码块添加行号和复制按钮
+                      </h2>
+                    </a>
+                  </article>
+                
               
                 
                   <article class="post">
@@ -157,14 +167,103 @@ var app = new Vue({
 
 
   <script src="https://cdn.staticfile.org/highlight.js/9.18.1/highlight.min.js"></script>
-  <script>
-    if(document.querySelectorAll('code').length)
-      hljs.initHighlighting()
-  </script>
+  <script src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js"></script>
+  <script src="https://cdn.staticfile.org/humane-js/3.2.2/humane.min.js"></script>
+
+  <script src="http://expand.xcj.im/js/expand.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/humane-js/3.2.2/themes/jackedup.min.css">
 
 
 
 
 
+
+
+
+<script>
+  // // markdown生成的超链接设置blank属性
+  // var aTags = Array.prototype.slice.apply(document.getElementsByTagName("a"));
+  // aTags.forEach(function(el) {
+  //   if(el.href.indexOf("?_blank") > -1) {
+  //     el.target = "_blank";
+  //     el.href = el.href.replace("?_blank", "");
+  //   }
+  // });
+
+  // // 给不支持forEach的NodeList添加forEach方法
+  // if (window.NodeList && !NodeList.prototype.forEach) {
+  //     NodeList.prototype.forEach = function (callback, thisArg) {
+  //         thisArg = thisArg || window
+  //         for (var i = 0; i < this.length; i++) {
+  //             callback.call(thisArg, this[i], i, this)
+  //         }
+  //     }
+  // }
+
+  // // 页面有代码块执行高亮函数和行号函数
+  //   if(document.querySelectorAll('pre code').length) {
+  //     hljs.initHighlighting()
+  //     lineNumber() // 添加行号和复制按钮
+  //   }
+
+  //   // 要copy的节点
+  //   var copyNode
+
+  //   function lineNumber(){
+  //     var elementArr = document.querySelectorAll('pre code');
+      
+  //     elementArr.forEach(function (item, index) {
+  //       var button = document.createElement('button')
+  //       // 利用伪元素获取自定义属性，直接写innerText在执行复制操作会被提取
+  //       button.setAttribute('data-title', '复制代码')
+  //       button.className = 'copy-code'
+  //       // 按钮添加点击事件，将copyNode替换为父节点
+  //       button.onclick = function() {
+  //         copyNode = this.parentNode
+  //       }
+  //       item.appendChild(button)
+
+  //       // 获取代码块的文本行数
+  //       var codeTextLine = item.textContent.trim().split('\n');
+  //       if(codeTextLine.length >= 10) {
+  //         // 根据代码行数动态修改代码块内边距
+  //         item.style.paddingLeft = (codeTextLine.length).toString().length * 0.6 + 1.4 + 'rem';
+  //         // 创建显示行号的ol标签
+  //         item.appendChild(createOl(codeTextLine));
+  //       }
+  //     });
+  //   }
+
+  //   // 创建ol标签
+  //   function createOl(arr) {
+  //     var ol = document.createElement('ol');
+  //     ol.className = 'line-box'
+  //     arr.forEach(function (item, index) {
+  //       var li = document.createElement('li'),
+  //           div = document.createElement('div');
+  //       div.className = 'line-number';
+  //       // 利用伪元素获取数据来显示行号
+  //       div.setAttribute('data-line', index + 1);
+  //       li.appendChild(div);
+  //       ol.appendChild(li);
+  //     });
+  //     return ol;
+  //   }
+
+  //   var clipboard = new ClipboardJS('.copy-code', {
+  //         text: function () {
+  //             return copyNode.innerText;
+  //         }
+  //       });
+  //   clipboard.on('success', function (e) {
+  //     console.log('复制成功！')
+  //   });
+  //   clipboard.on('error', function (e) {
+  //     console.log()
+  //     alert('一键复制失败，请手动复制！');
+  //   });
+
+</script>
   </body>
 </html>

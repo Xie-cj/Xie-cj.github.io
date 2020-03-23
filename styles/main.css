@@ -778,11 +778,86 @@ a {
 }
 
 .post-detail .post-content pre code {
-    font-size: 16px;
-    padding: 1rem 1.25rem;
+    font-size: 1rem;
 }
 
-.post-detail .post-content pre code:after{
+.post-detail .post-content p code, .post-detail .post-content ul code, .post-detail .post-content ol code {
+    background-color: #fff5f5;
+    color: #ff502c;
+    border: 0;
+}
+
+.post-detail .post-content pre code {
+    background: #343a40;
+    color: #f1f3f5;
+    position: relative;
+    padding: 1em;
+}.post-detail .post-content pre code::after {
     content: '';
+}
+
+pre {
+    white-space: pre
+}
+
+pre code ol.line-box {
+    position: absolute;
+    top: 1rem;
+    left: .5rem;
+    font-size: 1rem;
+    line-height: inherit !important;
+    margin-bottom: 0 !important;
+    padding-left: 0px !important;
+}
+
+pre code ol li {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+pre code ol li div:after {
+    content: attr(data-line)
+}
+
+.line-number {
+    border-right: 1px #c5c5c5 solid;
+    color: #c5c5c5;
+    text-align: right;
+    padding-right: 0.4rem;
+    font-size: 1rem;
+}
+
+.copy-code {
+    top: .3rem;
+    right: .3rem;
+    padding: .1rem .3rem;
+    border-radius: 3px;
+    position: absolute;
+    font-size: .75rem;
+    outline: none;
+    border: 0;
+    opacity: 0;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.copy-code:after{
+    content: attr(data-title)
+}
+
+.copy-code:hover {
+    opacity: 1 !important;
+}
+
+code:hover .copy-code {
+    opacity: .7;
+}
+
+
+@media (max-width: 800px) {
+    .copy-code {
+        opacity: .7;
+    }
 }
     
