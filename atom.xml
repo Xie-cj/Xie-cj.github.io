@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xcj.im</id>
     <title>小菜鸡&apos;s blog</title>
-    <updated>2020-03-23T08:56:42.674Z</updated>
+    <updated>2020-04-01T18:40:56.440Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xcj.im"/>
     <link rel="self" href="https://blog.xcj.im/atom.xml"/>
@@ -10,41 +10,6 @@
     <logo>https://blog.xcj.im/images/avatar.png</logo>
     <icon>https://blog.xcj.im/favicon.ico</icon>
     <rights>All rights reserved 2020, 小菜鸡&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[给代码块添加行号和复制按钮]]></title>
-        <id>https://blog.xcj.im/post/line-number/</id>
-        <link href="https://blog.xcj.im/post/line-number/">
-        </link>
-        <updated>2020-03-22T12:13:26.000Z</updated>
-        <summary type="html"><![CDATA[<p>使用highlight.js可以非常方便让code标签里面的代码高亮。你只需要引入highlight.js和highlight的样式文件，并在页面加载完成时执行<code>hljs.initHighlighting()</code>即可。但是它并不支持显示行号，所以自己撸一个简单的行号显示并利用clipboard实现代码复制功能。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>使用highlight.js可以非常方便让code标签里面的代码高亮。你只需要引入highlight.js和highlight的样式文件，并在页面加载完成时执行<code>hljs.initHighlighting()</code>即可。但是它并不支持显示行号，所以自己撸一个简单的行号显示并利用clipboard实现代码复制功能。</p>
-<!-- more -->
-<p>效果展示，以10行为分界线，代码小于10行时不显示行号</p>
-<pre><code>██╗  ██╗ ██████╗     ██╗
-╚██╗██╔╝██╔════╝     ██║
- ╚███╔╝ ██║          ██║
- ██╔██╗ ██║     ██   ██║
-██╔╝ ██╗╚██████╗╚█████╔╝
-╚═╝  ╚═╝ ╚═════╝ ╚════╝ 
-</code></pre>
-<p>代码大于等于10行，显示行号</p>
-<pre><code>▒██   ██▒ ▄████▄   ▄▄▄██▀▀▀
-▒▒ █ █ ▒░▒██▀ ▀█     ▒██   
-░░  █   ░▒▓█    ▄    ░██   
- ░ █ █ ▒ ▒▓▓▄ ▄██▒▓██▄██▓  
-▒██▒ ▒██▒▒ ▓███▀ ░ ▓███▒   
-▒▒ ░ ░▓ ░░ ░▒ ▒  ░ ▒▓▒▒░   
-░░   ░▒ ░  ░  ▒    ▒ ░▒░   
- ░    ░  ░         ░ ░ ░   
- ░    ░  ░ ░       ░   ░   
-         ░          
-</code></pre>
-<p>PS:<a href="http://patorjk.com/software/taag/#p=display&amp;f=Graffiti&amp;t=Type%20Something%20?_blank">字符画生成工具</a></p>
-<h2 id="代码显示行号">代码显示行号</h2>
-<p>这个行号显示其实就是增大<code>code</code>的左内边距+绝对定位的<code>ol</code>来实现的<img src="https://pic.downk.cc/item/5e7856345c560911297b863f.jpg" alt="img" loading="lazy"></p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Vue组件间通信]]></title>
         <id>https://blog.xcj.im/post/vue-zu-jian/</id>
@@ -103,6 +68,136 @@ this.$parent.$on('fun', (e) =&gt; {
 // 发送参数子组件让父组件响应fun事件
 this.$parent.$emit('fun', e)
 </code></pre>
+<pre class=" language-js"><code class="language-js hljs javascript">// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+// 接收参数子组件让父组件监听fun事件
+this.$parent.$on('fun', (e) => {
+    console.log(e)
+})
+
+// 发送参数子组件让父组件响应fun事件
+this.$parent.$emit('fun', e)
+</code></pre>
+<p><code>var a = 1</code></p>
 ]]></content>
     </entry>
     <entry>
@@ -120,7 +215,7 @@ this.$parent.$emit('fun', e)
 <hr>
 <h2 id="在这里先定几个小目标">在这里先定几个小目标</h2>
 <ol>
-<li>每周保质保量更新博客</li>
+<li>有计划的更新博客</li>
 <li>保持持续学习状态</li>
 <li><s>X年后月薪过万</s></li>
 </ol>
