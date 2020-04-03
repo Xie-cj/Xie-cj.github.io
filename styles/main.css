@@ -4361,3 +4361,9 @@ pre[class*="language-"] {
 .post_content h1 {
   font-size: 1.5rem;
 }
+/* 搜索关键字高亮 */
+.searched-keyword {
+  color: #000000;
+  font-weight: 700;
+  background: #FF9632;
+}
