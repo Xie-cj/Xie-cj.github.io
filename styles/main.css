@@ -93,7 +93,7 @@ figure {
   margin: 1em 0 2.5em 0;
 }
 .markdown {
-  line-height: 1.8em;
+  line-height: 1.5em;
   word-wrap: break-word;
   word-break: normal;
   overflow-wrap: break-word;
@@ -4148,7 +4148,7 @@ em {
   border: 1px solid #ececec;
   margin-top: 1.2em;
   margin-bottom: 2.2em;
-  padding: 15px 20px;
+  padding: 16px 20px;
   display: block;
   overflow: auto;
   background: #fbfbfb;
@@ -4355,6 +4355,7 @@ pre[class*="language-"] {
   background: #1e1e1e !important;
 }
 .markdown pre code {
+  line-height: 1.5 !important;
   color: #e4e4e4 !important;
   white-space: pre;
 }
