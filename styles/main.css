@@ -4353,6 +4353,7 @@ pre[class*="language-"] {
   background: #1e1e1e !important;
 }
 .markdown pre code {
+  color: #e4e4e4 !important;
   white-space: pre;
 }
 .hljs {
