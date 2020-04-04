@@ -6,13 +6,22 @@ aTags.forEach(function (el) {
         el.href = el.href.replace("?_blank", "");
     }
 });
+// 超过10行的代码块添加行号
+NodeList.prototype.forEach = NodeList.prototype.forEach || Array.prototype.forEach;
+document.querySelectorAll('pre code').forEach((item) => {
+    if (item.textContent.trim().split('\n').length >= 10) {
+        item.parentNode.className += ' line-numbers'
+    }
+})
 
-(function (){
-    NodeList.prototype.forEach = NodeList.prototype.forEach || Array.prototype.forEach;
-
-    document.querySelectorAll('pre code').forEach((item) => {
-        if(item.textContent.trim().split('\n').length >= 10) {
-            item.parentNode.className += ' line-numbers'
-        }
-    })
-})()
+// 代码高亮插件
+if (document.querySelector('pre code')) {
+    console.log(1)
+    document.write(`
+          <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/vs2015.min.css">
+          <script language=javascript src='https://cdn.staticfile.org/highlight.js/9.18.1/highlight.min.js'><\/script>
+          <script>hljs.initHighlightingOnLoad();<\/script>
+    
+          <script src="/media/scripts/prism.js"><\/script>
+        `);
+}
