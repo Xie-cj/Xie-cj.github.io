@@ -6,8 +6,9 @@ aTags.forEach(function (el) {
         el.href = el.href.replace("?_blank", "");
     }
 });
+
 // 超过10行的代码块添加行号
-NodeList.prototype.forEach = NodeList.prototype.forEach || Array.prototype.forEach;
+NodeList.prototype.forEach = NodeList.prototype.forEach || Array.prototype.forEach; // 某浏览器NodeList不支持forrEach方法
 document.querySelectorAll('pre code').forEach((item) => {
     if (item.textContent.trim().split('\n').length >= 10) {
         item.parentNode.className += ' line-numbers'
@@ -16,7 +17,6 @@ document.querySelectorAll('pre code').forEach((item) => {
 
 // 代码高亮插件
 if (document.querySelector('pre code')) {
-    console.log(1)
     document.write(`
           <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/vs2015.min.css">
           <script language=javascript src='https://cdn.staticfile.org/highlight.js/9.18.1/highlight.min.js'><\/script>
