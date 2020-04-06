@@ -3,7 +3,7 @@ NodeList.prototype.forEach = NodeList.prototype.forEach || Array.prototype.forEa
 
 var aTags = Array.prototype.slice.apply(document.getElementsByTagName("a"));    
 aTags.forEach(function (el) {
-    // 给链接带有'?_blank'参数的a标签设置_blank属性
+    // 给herf带有'?_blank'参数的a标签设置_blank属性
     if (el.href.indexOf("?_blank") > -1) {
         el.target = "_blank";
         el.href = el.href.replace("?_blank", "");
@@ -18,4 +18,4 @@ document.querySelectorAll('pre code').forEach(function (item) {
 })
 
 // 显示Loading
-window.onbeforeunload = function(){document.querySelector('#loading').style = 'display: block;'}
+window.onbeforeunload = function(){document.querySelector('#loading').style.cssText = 'display: block;'}
