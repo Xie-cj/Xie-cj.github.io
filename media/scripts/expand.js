@@ -5,6 +5,11 @@ aTags.forEach(function (el) {
         el.target = "_blank";
         el.href = el.href.replace("?_blank", "");
     }
+
+    // if(el.target == '_self' || el.target == '') {
+    //     // load()
+    //     el.click = NProgress.start()
+    // }
 });
 
 // 超过10行的代码块添加行号
@@ -12,5 +17,13 @@ NodeList.prototype.forEach = NodeList.prototype.forEach || Array.prototype.forEa
 document.querySelectorAll('pre code').forEach(function (item) {
     if (item.textContent.trim().split('\n').length >= 10) {
         item.parentNode.className += ' line-numbers'
+    }
+})
+
+document.querySelectorAll('a').forEach(function(el){
+    if(el.target == '_self' || el.target == '') {
+        el.addEventListener("click", function(){
+            NProgress.start()
+        });
     }
 })
