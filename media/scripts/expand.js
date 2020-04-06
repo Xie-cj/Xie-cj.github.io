@@ -15,10 +15,11 @@ document.querySelectorAll('pre code').forEach(function (item) {
     }
 })
 
+// 内部链接点击时显示loading
 document.querySelectorAll('a').forEach(function(el){
     if(el.target == '_self' || el.target == '') {
         el.addEventListener("click", function(){
-            document.querySelector('#loading').style = 'display: block;'
+            document.querySelector('#loading').style = 'display: flex;'
         });
     }
 })
