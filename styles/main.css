@@ -4698,3 +4698,18 @@ pre[class*="language-"] {
   font-weight: 700;
   background: #FF9632;
 }
+/* Loading */
+#loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #f7f7f7;
+  font-size: 10rem;
+  display: none;
+}

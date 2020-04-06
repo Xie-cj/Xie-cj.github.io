@@ -5,11 +5,6 @@ aTags.forEach(function (el) {
         el.target = "_blank";
         el.href = el.href.replace("?_blank", "");
     }
-
-    // if(el.target == '_self' || el.target == '') {
-    //     // load()
-    //     el.click = NProgress.start()
-    // }
 });
 
 // 超过10行的代码块添加行号
@@ -23,7 +18,7 @@ document.querySelectorAll('pre code').forEach(function (item) {
 document.querySelectorAll('a').forEach(function(el){
     if(el.target == '_self' || el.target == '') {
         el.addEventListener("click", function(){
-            NProgress.start()
+            document.querySelector('#loading').style = 'display: block;'
         });
     }
 })
