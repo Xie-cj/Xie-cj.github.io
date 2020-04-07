@@ -4654,6 +4654,9 @@ div.code-toolbar > .toolbar button:hover {
   div.code-toolbar > .toolbar {
     opacity: 1;
   }
+  #loading {
+    display: none !important;
+  }
 }
 .hljs-title,
 .token.function {
