@@ -18,4 +18,6 @@ document.querySelectorAll('pre code').forEach(function (item) {
 })
 
 // 显示Loading
-window.onbeforeunload = function(){document.querySelector('#loading').style.cssText = 'display: block;'}
+var showLoading = function(){document.querySelector('#loading').style.cssText = 'display: block;'}
+window.onbeforeunload = showLoading
+window.onpagehide = showLoading
