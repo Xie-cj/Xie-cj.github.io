@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.xcj.im</id>
+    <id>http://blog.xcj.im</id>
     <title>小菜鸡&apos;s blog</title>
-    <updated>2020-10-10T13:57:47.701Z</updated>
+    <updated>2020-10-10T14:55:56.494Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.xcj.im"/>
-    <link rel="self" href="https://blog.xcj.im/atom.xml"/>
+    <link rel="alternate" href="http://blog.xcj.im"/>
+    <link rel="self" href="http://blog.xcj.im/atom.xml"/>
     <subtitle>小菜鸡就是我，我就是 · 小菜鸡~</subtitle>
-    <logo>https://blog.xcj.im/images/avatar.png</logo>
-    <icon>https://blog.xcj.im/favicon.ico</icon>
+    <logo>http://blog.xcj.im/images/avatar.png</logo>
+    <icon>http://blog.xcj.im/favicon.ico</icon>
     <rights>All rights reserved 2020, 小菜鸡&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[十步学习法]]></title>
-        <id>https://blog.xcj.im/post/shi-bu-xue-xi-fa/</id>
-        <link href="https://blog.xcj.im/post/shi-bu-xue-xi-fa/">
+        <id>http://blog.xcj.im/post/shi-bu-xue-xi-fa/</id>
+        <link href="http://blog.xcj.im/post/shi-bu-xue-xi-fa/">
         </link>
         <updated>2020-07-27T14:18:36.000Z</updated>
         <summary type="html"><![CDATA[<p>十步学习法是由John Z. Sonmez在《软技能-代码之外的生存指南》中提出的一套成体系的快速高效学习的方法。</p>
@@ -44,8 +44,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello World!]]></title>
-        <id>https://blog.xcj.im/post/hello-world/</id>
-        <link href="https://blog.xcj.im/post/hello-world/">
+        <id>http://blog.xcj.im/post/hello-world/</id>
+        <link href="http://blog.xcj.im/post/hello-world/">
         </link>
         <updated>2020-03-13T12:56:10.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="你好世界">你好，世界！</h1>
