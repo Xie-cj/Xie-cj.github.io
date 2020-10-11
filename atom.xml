@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xcj.im</id>
     <title>小菜鸡&apos;s blog</title>
-    <updated>2020-10-10T15:39:58.510Z</updated>
+    <updated>2020-10-11T04:45:59.221Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xcj.im"/>
     <link rel="self" href="https://blog.xcj.im/atom.xml"/>
@@ -10,38 +10,6 @@
     <logo>https://blog.xcj.im/images/avatar.png</logo>
     <icon>https://blog.xcj.im/favicon.ico</icon>
     <rights>All rights reserved 2020, 小菜鸡&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[十步学习法]]></title>
-        <id>https://blog.xcj.im/post/shi-bu-xue-xi-fa/</id>
-        <link href="https://blog.xcj.im/post/shi-bu-xue-xi-fa/">
-        </link>
-        <updated>2020-07-27T14:18:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>十步学习法是由John Z. Sonmez在《软技能-代码之外的生存指南》中提出的一套成体系的快速高效学习的方法。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>十步学习法是由John Z. Sonmez在《软技能-代码之外的生存指南》中提出的一套成体系的快速高效学习的方法。</p>
-<!-- more -->
-<h2 id="十步学习法">十步学习法</h2>
-<p>十步学习法的前六步只需要做一次，第七步到第十步则需要不断的操作，这十步学习法分别是：</p>
-<ol>
-<li><a href="#%E4%BA%86%E8%A7%A3%E5%85%A8%E5%B1%80">了解全局</a></li>
-<li><a href="#%E7%A1%AE%E5%AE%9A%E8%8C%83%E5%9B%B4">确定范围</a></li>
-<li><a href="#%E5%AE%9A%E4%B9%89%E7%9B%AE%E6%A0%87">定义目标</a></li>
-<li><a href="#%E5%AF%BB%E6%89%BE%E8%B5%84%E6%BA%90">寻找资源</a></li>
-<li><a href="#%E5%88%9B%E5%BB%BA%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92">创建学习计划</a></li>
-<li><a href="#%E7%AD%9B%E9%80%89%E8%B5%84%E6%BA%90">筛选资源</a></li>
-<li><a href="#%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0%EF%BC%8C%E6%B5%85%E5%B0%9D%E8%BE%84%E6%AD%A2">开始学习，浅尝辄止</a></li>
-<li><a href="#%E5%8A%A8%E6%89%8B%E6%93%8D%E4%BD%9C%EF%BC%8C%E8%BE%B9%E5%AD%A6%E8%BE%B9%E7%8E%A9">动手操作，边学边玩</a></li>
-<li><a href="#%E5%85%A8%E9%9D%A2%E6%8E%8C%E6%8F%A1%EF%BC%8C%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8">全面掌握，学以致用</a></li>
-<li><a href="#%E4%B9%90%E4%B8%BA%E4%BA%BA%E5%B8%88%EF%BC%8C%E8%9E%8D%E4%BC%9A%E8%B4%AF%E9%80%9A">乐为人师，融会贯通</a></li>
-</ol>
-<h2 id="了解全局">了解全局</h2>
-<p>了解全局是这十步里最为基础也是最为重要的一步，很多人在学习一门技术前根本就没了解过它是什么，它能干什么，以及这门技术的适用场景。在这学习中，首先要做到就是对这门技术有一个宏观的了解，比如这项技术被创造出来是为了解决什么问题，哪些时候需要用它，它的核心思想是什么等等</p>
-<h2 id="确定范围">确定范围</h2>
-<p>在对一门技术有了一个基础的认识后就需要确定学习的范围。这个学习范围可以是技术本身输入到什么程度，也可以是该技术的一些周边技术。但这个范围不宜过大，应根据自身可支配的时间来确定，时间充足的当然可以全都要，时间比较紧还是建议将学习范围定义为使用该技术所需的最低要求。</p>
-<h2 id="定义目标">定义目标</h2>
-<p>定义目标这一步不应该作为确定范围的延续，而是作为确定范围后的升华</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello World!]]></title>
         <id>https://blog.xcj.im/post/hello-world/</id>
@@ -54,13 +22,6 @@
         <content type="html"><![CDATA[<h1 id="你好世界">你好，世界！</h1>
 <p>我的第一篇博文</p>
 <!-- more -->
-<hr>
-<h2 id="在这里先定几个小目标">在这里先定几个小目标</h2>
-<ol>
-<li>有计划的更新博客</li>
-<li>保持持续学习状态</li>
-<li><s>X年后月薪过万</s></li>
-</ol>
 ]]></content>
     </entry>
 </feed>
