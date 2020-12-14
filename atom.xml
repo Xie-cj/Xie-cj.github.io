@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xcj.im</id>
     <title>小菜鸡&apos;s blog</title>
-    <updated>2020-10-22T11:59:19.043Z</updated>
+    <updated>2020-12-14T15:46:30.847Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xcj.im"/>
     <link rel="self" href="https://blog.xcj.im/atom.xml"/>
@@ -11,17 +11,55 @@
     <icon>https://blog.xcj.im/favicon.ico</icon>
     <rights>All rights reserved 2020, 小菜鸡&apos;s blog</rights>
     <entry>
+        <title type="html"><![CDATA[JavaScript]]></title>
+        <id>https://blog.xcj.im/post/javascript/</id>
+        <link href="https://blog.xcj.im/post/javascript/">
+        </link>
+        <updated>2021-01-01T14:19:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>1995年，JavaScript问世。JavaScript的主要用途是代替服务端进行数据验证，在数据不符合要求时，提示用户。因为当时的网速非常慢，加载网页十分消磨人们的耐心。网景公司希望在Navigator浏览器中加入一种可由客户端进行基本验证的脚本语言，JavaScript应运而生。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>1995年，JavaScript问世。JavaScript的主要用途是代替服务端进行数据验证，在数据不符合要求时，提示用户。因为当时的网速非常慢，加载网页十分消磨人们的耐心。网景公司希望在Navigator浏览器中加入一种可由客户端进行基本验证的脚本语言，JavaScript应运而生。</p>
+<!-- more -->
+<h2 id="javascript历史">JavaScript历史</h2>
+<p>JavaScript期初初命名为LiveScript，为了赶上发布发布时间，网景与Java语言的发明者Sun公司（已被甲骨文收购）结盟，共同开发LiveScript。就在正式发布前，网景公司将LiveScript改名为JavaScript以蹭上Java的热度。</p>
+<h2 id="javascript三大组成部分">JavaScript三大组成部分</h2>
+<ol>
+<li>ECMAScript</li>
+<li>DOM</li>
+<li>BOM</li>
+</ol>
+<h3 id="ecmascript">ECMAScript</h3>
+<blockquote>
+<p>ECMAScript是一种由Ecma国际（前身为欧洲计算机制造商协会，European Computer Manufacturers Association）通过ECMA-262标准化的脚本程序设计语言。这种语言在万维网上应用广泛，它往往被称为JavaScript或JScript，所以它可以理解为是JavaScript的一个标准,但实际上后两者是ECMA-262标准的实现和扩展。</p>
+</blockquote>
+<p>简单来说，ECMAScript就是JavaScript的规范，虽然不同内核的浏览器里JavaScript的实现各不相同，但都遵循ECMAScript语言标准</p>
+<h3 id="dom">DOM</h3>
+<p>文档对象模型（Document Object Mode， DOM）是W3C制定的标准接口规范，是一种处理HTML和XML文件的标准API。DOM通过创建表示文档的树，让开发者可以随心所欲的控制网页的内容和结构。使用DOM API可以轻松地删除、添加、替换、修改节点。</p>
+<h3 id="bom">BOM</h3>
+<p>浏览器对象模型（Browser Object Model， BOM）用于支持访问和操作浏览器的窗口。使用BOM，开发者可以操控浏览器显示页面之外的部分。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hello World!]]></title>
         <id>https://blog.xcj.im/post/hello-world/</id>
         <link href="https://blog.xcj.im/post/hello-world/">
         </link>
-        <updated>2020-10-22T12:56:10.000Z</updated>
+        <updated>2021-01-01T12:56:10.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="你好世界">你好，世界！</h1>
 <p>我的第一篇博文</p>
 ]]></summary>
         <content type="html"><![CDATA[<h1 id="你好世界">你好，世界！</h1>
 <p>我的第一篇博文</p>
 <!-- more -->
+<hr>
+<p>2021年，本博客迎来了新的开始，同时也希望我的人生有新的开始。<br>
+先立几个flag</p>
+<ul>
+<li>认真读完红宝书（JavaScript高级程序设计）</li>
+<li>理解Vue源码</li>
+<li>博客保持一定频率的更新</li>
+<li>深入学习一门后端语言（暂定Java）及其周边生态</li>
+</ul>
 ]]></content>
     </entry>
 </feed>
